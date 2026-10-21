@@ -1,0 +1,35 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 构建（tensor + nn + optimizer + main）",
+            "command": "D:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-O2",
+                "-Wall",
+                "-Wextra",
+                "-std=c++17",
+                "${workspaceFolder}\\tensor\\*.cpp",
+                "${workspaceFolder}\\nn\\*.cpp",
+                "${workspaceFolder}\\optimizer\\*.cpp",
+                "${workspaceFolder}\\main.cpp",
+                "-o",
+                "${workspaceFolder}\\main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "编译 tensor/ + nn/ + optimizer/ 下的全部 .cpp 加 main.cpp（MinGW 的 g++ 会自己展开 *.cpp），输出固定为根目录的 main.exe。"
+        }
+    ],
+    "version": "2.0.0"
+}

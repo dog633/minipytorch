@@ -1,0 +1,24 @@
+# ---------- C++ 构建产物 ----------
+*.exe
+*.o
+*.obj
+*.pyd
+*.pdb
+*.ilk
+*.exp
+*.lib
+build/
+build_cmake/
+
+# ---------- Python 构建产物 ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+*.so
+
+# ---------- 编辑器 ----------
+# 保留 tasks.json（它记录了这个项目的构建命令）
+.vscode/*
+!.vscode/tasks.json

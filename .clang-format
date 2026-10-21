@@ -1,0 +1,21 @@
+# 与 Tensor.cpp 现有风格一致：Allman 大括号、4 空格、100 列
+# VS Code 里按 Shift+Alt+F 即会应用（C/C++ 扩展自带 clang-format）
+BasedOnStyle: LLVM
+Language: Cpp
+Standard: c++17
+
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 100
+
+BreakBeforeBraces: Allman
+InsertBraces: true
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortFunctionsOnASingleLine: Inline
+
+PointerAlignment: Right
+SpaceBeforeParens: ControlStatements
+SortIncludes: false
